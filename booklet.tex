@@ -1,0 +1,179 @@
+\documentclass[12pt]{article}
+\usepackage[a5paper,margin=2cm]{geometry}
+\usepackage[french]{babel}
+\usepackage{amssymb,amsthm,amsmath}
+\usepackage{xltxtra}
+\usepackage{stmaryrd}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{color}
+\lstset{
+        extendedchars=false,
+        showstringspaces=false,
+        escapeinside=``,
+        keywordstyle=\color{blue},
+        commentstyle=\color[rgb]{0.133,0.545,0.133},
+        columns=flexible,
+        language=C++,
+        tabsize=4,
+        basicstyle=\ttfamily,
+        numbers=left,
+        frame=lines
+}
+
+\begin{document}
+\tableofcontents\vspace{0.5cm}
+
+\section{Graphes}
+\subsection{Dijkstra}
+{\scriptsize\lstinputlisting{code/dijkstra.cc}}
+
+\subsection{Floyd-Warshall}
+{\scriptsize\lstinputlisting{code/floydwarshall.cc}}
+
+\subsection{Bellman-Ford}
+{\scriptsize\lstinputlisting{code/bellmanford.cc}}
+
+\subsection{Kruskal-Prim}
+{\scriptsize\lstinputlisting{code/kruskalprim.cc}}
+
+\subsection{Parcours Eulerien}
+{\scriptsize\lstinputlisting{code/eulertour.cc}}
+
+\subsection{SCC}
+{\scriptsize\lstinputlisting{code/scc.cc}}
+
+\subsection{Max Flow}
+{\scriptsize\lstinputlisting{code/maxflow.cc}}
+
+\subsection{MCMF}
+{\scriptsize\lstinputlisting{code/mcmf.cc}}
+
+\subsection{Min Cut}
+{\scriptsize\lstinputlisting{code/mincut.cc}}
+
+\subsection{Couplage Maximal (biparti)}
+{\scriptsize\lstinputlisting{code/bipartitematch.cc}}
+
+\subsection{Algorithme Hongrois}
+{\scriptsize\lstinputlisting{code/hungarian.cc}}
+
+\subsection{Ford-Fulkerson}
+{\scriptsize\lstinputlisting{code/fordfulkerson.cc}}
+
+\subsection{BFS}
+{\scriptsize\lstinputlisting{code/bfs.cc}}
+
+\subsection{DFS}
+{\scriptsize\lstinputlisting{code/dfs.cc}}
+
+
+\section{Strings}
+\subsection{KMP}
+{\scriptsize\lstinputlisting{code/kmp.cc}}
+
+\subsection{Boyer-Moore}
+{\scriptsize\lstinputlisting{code/boyermoore.cc}}
+
+\subsection{Hashing}
+{\scriptsize\lstinputlisting{code/hash.cc}}
+
+\subsection{Rabin-Karp}
+{\scriptsize\lstinputlisting{code/rabinkarp.cc}}
+
+\subsection{Algorithme Z}
+{\scriptsize\lstinputlisting{code/zalg.cc}}
+
+\subsection{Manacher (sous-palindrome le plus long)}
+{\scriptsize\lstinputlisting{code/manacher.cc}}
+
+
+\section{Structures}
+\subsection{Tableaux de Suffixes, LCP}
+{\scriptsize\lstinputlisting{code/suffixarray.cc}}
+
+\subsection{Tries}
+{\scriptsize\lstinputlisting{code/trie.cc}}
+
+\subsection{Arbres de segments}
+{\scriptsize\lstinputlisting{code/segmenttree.cc}}
+
+\subsection{Treaps}
+{\scriptsize\lstinputlisting{code/treap.cc}}
+
+\subsection{Arbres binaires indexés}
+{\scriptsize\lstinputlisting{code/bit.cc}}
+
+
+\section{Géométrie}
+\subsection{Enveloppe convexe}
+{\scriptsize\lstinputlisting{code/convexhull.cc}}
+
+\subsection{Notes}
+\input{geometrynotes}
+
+
+\section{Arithmétique et Algèbre}
+\subsection{Exponentation modulaire rapide}
+{\scriptsize\lstinputlisting{code/fastexpmod.cc}}
+
+\subsection{DFT NTT, convolution}
+{\scriptsize\lstinputlisting{code/dftntt.cc}}
+
+\subsection{Coefficients Binomiaux}
+{\scriptsize\lstinputlisting{code/binomials.cc}}
+
+\subsection{Equations diophantiennes linéaires}
+{\scriptsize\lstinputlisting{code/diophantine.cc}}
+
+\subsection{Prochaine permutation (lexicographique)}
+{\scriptsize\lstinputlisting{code/nextperm.cc}}
+
+\subsection{Enumeration de permutations}
+{\scriptsize\lstinputlisting{code/enumperm.cc}}
+
+\subsection{Systèmes linéaires}
+{\scriptsize\lstinputlisting{code/linear.cc}}
+
+\subsection{Déterminant}
+{\scriptsize\lstinputlisting{code/determinant.cc}}
+
+\subsection{Inversion de matrice}
+{\scriptsize\lstinputlisting{code/matinverse.cc}}
+
+\subsection{Multiplication chaînée}
+{\scriptsize\lstinputlisting{code/matchain.cc}}
+
+\subsection{Simplexe}
+{\scriptsize\lstinputlisting{code/simplex.cc}}
+ 
+\subsection{Union Find}
+{\scriptsize\lstinputlisting{code/unionfind.cc}}
+
+\subsection{Crible}
+{\scriptsize\lstinputlisting{code/sieve.cc}}
+
+\subsection{Algorithme d'Euclide Etendu}
+{\scriptsize\lstinputlisting{code/exteuclide.cc}}
+
+\subsection{Kadane (sous tableau de somme max)}
+{\scriptsize\lstinputlisting{code/kadane.cc}}
+
+
+
+\subsection{Recherches (dichotomie, trichotomie)}
+\input{searchesnotes}
+
+\subsection{Notes}
+\input{arithnotes}
+
+
+\section{Bonus}
+\subsection{Template}
+{\scriptsize\lstinputlisting{code/template.cc}}
+
+\subsection{Notes : STL}
+\input{stlnotes}
+
+\end{document}
+
