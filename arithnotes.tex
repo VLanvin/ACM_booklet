@@ -1,1 +1,18 @@
- 
+\textbf{Solving 1st order recurrence.}
+  \begin{enumerate}
+    \item $au_{n+1} = bu_n \rightarrow u_n = (\frac{b}{a})^n  u_0$
+    \item $u_{n+1} = u_n + c \rightarrow u_n = u_0 + n  c$
+    \item $au_{n+1} = bu_n + c \rightarrow u_{n+1} = \frac{b}{a}  u_n + \frac{c}{a}$\\
+          then substract both equations to obtain :\\
+          $u_{n+2} = \frac{b+a}{a}u_{n+1} - \frac{b}{a}u_n$\\
+          and solve as a 2nd order equation.
+  \end{enumerate}
+
+\textbf{Solving 2nd order recurrence.} $au_{n+2} + bu_{n+1} + cu_n = 0$\\
+  \begin{enumerate}
+    \item First solve $ar^2 + br + c = 0$
+    \item If two real roots $r_1$ and $r_2$ the solution is $Ar_1^n + Br_2^n$
+    \item If one real root $r$ the solution is $r^n(A+Bn)$
+    \item If two img. roots $r_1=re^{i\theta}$ and $r_2=re^{-i\theta}$ the solution is
+          $2r^n(Acos(\theta n) + Bsin(\theta n))$
+  \end{enumerate}
