@@ -5,9 +5,11 @@ vector<PII> A;
 
 for(int i = 0; i < N; i++) make(parent, rank, i);
 
-for(vector<PII>::iterator it=E[i].begin(); it != E[i].end(); it++) {
-  if(find(parent, rank, it.first) != find(parent, rank, it.second)) {
-    A.push_back(make_pair(it.first, it.second));
-    merge(parent, rank, it.first, it.second);
+for(int i = 0; i < N; i++) {
+  for(vector<PII>::iterator it=E[i].begin(); it != E[i].end(); it++) {
+    if(find(parent, rank, it.first) != find(parent, rank, it.second)) {
+      A.push_back(make_pair(it.first, it.second));
+      merge(parent, rank, it.first, it.second);
+    }
   }
 }
