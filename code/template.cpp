@@ -12,6 +12,7 @@
 #define SQ(x) ((x) * (x))
 #define SZ(x) ((int) ((x.).size()))
 #define ll long long
+#define INF 1000000000
 
 using namespace std;
 

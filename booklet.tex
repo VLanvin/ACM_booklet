@@ -1,28 +1,40 @@
-\documentclass[10pt]{article}
-\usepackage[a5paper,margin=2cm]{geometry}
+\documentclass[10pt]{extarticle}
+\usepackage[a4paper]{geometry}
 \usepackage[utf8]{inputenc}
-\usepackage[francais]{babel}
+\usepackage[french]{babel}
 \usepackage{amssymb,amsthm,amsmath}
+\usepackage{xltxtra}
 \usepackage{stmaryrd}
 \usepackage{graphicx}
 \usepackage{listings}
 \usepackage{color}
 \lstset{
-        extendedchars=false,
-        showstringspaces=false,
-        escapeinside=``,
-        keywordstyle=\color{blue},
-        commentstyle=\color[rgb]{0.133,0.545,0.133},
-        columns=flexible,
-        language=C++,
-        tabsize=4,
-        basicstyle=\ttfamily,
-        numbers=left,
-        frame=lines
+	extendedchars=true,
+	showstringspaces=false,
+	escapeinside=``,
+	keywordstyle=\color{blue},
+	commentstyle=\color[rgb]{0.133,0.545,0.133},
+	columns=flexible,
+	language=C++,
+	tabsize=2,
+	basicstyle=\normalsize\selectfont\ttfamily,
+	numbers=left,
+	frame=lines,
+	breaklines=true
 }
+\geometry{
+	left=15mm,
+	right=7mm,
+	top=7mm,
+	bottom=15mm
+}
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
 
 \begin{document}
-\tableofcontents\vspace{0.5cm}
+
+\tableofcontents
+
 
 \section{Graphes}
 \subsection{Dijkstra}
@@ -117,9 +129,6 @@
 \subsection{Coefficients Binomiaux}
 {\scriptsize\lstinputlisting{code/binomials.cpp}}
 
-\subsection{Equations diophantiennes linéaires}
-{\scriptsize\lstinputlisting{code/diophantine.cpp}}
-
 \subsection{Prochaine permutation (lexicographique)}
 {\scriptsize\lstinputlisting{code/nextperm.cpp}}
 
@@ -141,19 +150,13 @@
 \subsection{Simplexe}
 {\scriptsize\lstinputlisting{code/simplex.cpp}}
  
-\subsection{Crible}
-{\scriptsize\lstinputlisting{code/sieve.cpp}}
-
 \subsection{Algorithme d'Euclide Etendu}
-{\scriptsize\lstinputlisting{code/exteuclide.cpp}}
+{\scriptsize\lstinputlisting{code/exteuclid.cpp}}
 
 \subsection{Kadane (sous tableau de somme max)}
 {\scriptsize\lstinputlisting{code/kadane.cpp}}
 
 
-
-\subsection{Recherches (dichotomie, trichotomie)}
-\input{searchesnotes}
 
 \subsection{Notes}
 \input{arithnotes}
